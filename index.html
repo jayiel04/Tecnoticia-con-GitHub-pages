@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoticias 🚀 - Noticias del mundo tecnológico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Tecnoticias 🚀</h1>
+            <p class="header__subtitle">Noticias del mundo tecnológico</p>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="search">
+            <div class="search__bar">
+                <input type="text" id="search-input" class="search__input" placeholder="Buscar noticias..." autofocus>
+                <button id="search-btn" class="search__btn">🔍</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 class="section__title">Categorías</h2>
+            <div class="categories__grid">
+                <button class="category__btn" data-category="ultimas">📰 Últimas noticias</button>
+                <button class="category__btn" data-category="ia">🤖 Inteligencia Artificial</button>
+                <button class="category__btn" data-category="moviles">📱 Dispositivos móviles</button>
+                <button class="category__btn" data-category="hardware">💻 Hardware</button>
+                <button class="category__btn" data-category="gaming">🎮 Gaming</button>
+                <button class="category__btn" data-category="seguridad">🔐 Ciberseguridad</button>
+            </div>
+        </section>
+
+        <section class="results">
+            <h2 class="section__title">Resultados</h2>
+            <div id="results-container" class="cards-grid"></div>
+        </section>
+
+        <section class="favorites">
+            <div class="section__header">
+                <h2 class="section__title">⭐ Favoritos</h2>
+                <button id="clear-favorites-btn" class="btn btn--danger">Eliminar todos los favoritos</button>
+            </div>
+            <div id="favorites-container" class="cards-grid"></div>
+        </section>
+
+        <section class="last-search">
+            <div class="section__header">
+                <h2 class="section__title">📋 Última consulta</h2>
+                <button id="clear-last-search-btn" class="btn btn--secondary">Limpiar última búsqueda</button>
+            </div>
+            <div id="last-search-container" class="last-search__content"></div>
+        </section>
+
+        <section class="history">
+            <div class="section__header">
+                <h2 class="section__title">🕓 Historial de consultas</h2>
+                <button id="clear-history-btn" class="btn btn--secondary">Limpiar historial</button>
+            </div>
+            <div id="history-container" class="history__content"></div>
+        </section>
+    </main>
+
+    <div id="message-container" class="message-container"></div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
